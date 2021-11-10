@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App(props) {
   return (
-    <div className="todoapp stack-large">
+    <div className="todoapp stack-large"> 
+    {/* Giving App its "container" div  */}
       <h1>TodoMatic</h1>
       <form>
         <h2 className="label-wrapper">
@@ -11,6 +12,7 @@ function App(props) {
             What needs to be done?
           </label>
         </h2>
+        {/* Setting up Input box to add new To Do item */}
         <input
           type="text"
           id="new-todo-input"
@@ -18,7 +20,7 @@ function App(props) {
           name="text"
           autoComplete="off"
         />
-        <button type="submit" className="btn btn__primary btn__lg">
+        <button type="submit" className="btn btn__primary btn__lg"> 
           Add
         </button>
       </form>
@@ -38,12 +40,13 @@ function App(props) {
           <span>Completed</span>
           <span className="visually-hidden"> tasks</span>
         </button>
+        {/* Adding the all, Active and Completed buttons to filter through the To Do that matches that criteria. */}
       </div>
       <h2 id="list-heading">
         3 tasks remaining
       </h2>
       <ul
-        role="list"
+        // role="list" Commented this out since ul already has role of list. Eliminates uneccessary code.
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
@@ -58,6 +61,7 @@ function App(props) {
             <button type="button" className="btn">
               Edit <span className="visually-hidden">Eat</span>
             </button>
+            {/* Our favorite Crud functionality buttons */}
             <button type="button" className="btn btn__danger">
               Delete <span className="visually-hidden">Eat</span>
             </button>
