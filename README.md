@@ -1,3 +1,9 @@
+Component Based Architecture in my opinion is the best way to approach building a static Single Page Website. As a developer, component based architecture allows the freedom of separating logic into component files. It is a much more efficient way to program as it allows your features(components) to be separated into their own file, then imported where needed. 
+
+This allows for logic to exist only for the specific component it is referencing. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
